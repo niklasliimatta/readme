@@ -6,37 +6,18 @@
 ### Mitä versiohallinnalla tarkoitetaan?
 Versionhallinnalla tarkoittaa menetelmää, joka säilöö tietoa ja siihen tehtyjä muutoksia.
 
-Sen käyttöön on pääsääntöisesti kaksi syytä: 
-1. Versionhallinta mahdollistaa tiedon varmuuskopioinnin. Varmuuskopiot (*commitit*) sisältävät sekä tiedon nykyisen, että aikaisemman tilan.  
-2. Versiohallinta (*GitHub:n* kautta) mahdollistaa tiedon jakamisen muille, sekä osallistumisen muiden projekteihin.
+  
 
 
-### Mikä [Git](https://git-scm.com) on?
 
-Git on hajautetun versiohallinnan menetelmä jossa ideana on tarjota säilytyspaikka käytettävälle tiedolle ja pitää kirjaa tietoon tehdyistä muutoksista. Ohjelmistotyössä versiohallinnan käyttäminen yhteistyöskentelyyn ja muutosten jäljittämiseen on normi. Alunperin Git:n on kehittänyt suomalainen [Linus Thorvalds](https://fi.wikipedia.org/wiki/Linus_Torvalds).
+Git on hajautetun versiohallinnan menetelmä jossa ideana on tarjota säilytyspaikka käytettävälle tiedolle ja pitää kirjaa tietoon tehdyistä muutoksista. Alunperin Git:n on kehittänyt suomalainen [Linus Thorvalds](https://fi.wikipedia.org/wiki/Linus_Torvalds).
 
 ### Mikä [GitHub](https://github.com/) on?
 
-*GitHub* mahdollistaa myös saman tiedon parissa työskentelyn eri tietokoneilta. Saman tiedon parissa työskennellään kuitenkin usein eri tietokoneilta (mikroluokka, kotikone, jne.).
+*GitHub* mahdollistaa myös saman tiedon parissa työskentelyn eri tietokoneilta.
 
-Toisaalta versiohallinta toimii myös varmuuskopiona työllesi. Näin tieto ei häviä, vaikka tietokoneesi hajoaisi.
-
-*GitHub* (ja myös [GitLab](https://about.gitlab.com/)) ovat palveluita, joissa voidaan pitää Git-muotoisia varastoja (*Repository*). Ne mahdollistavat tiedon jakamisen muille saman tiedon parissa työskenteleville henkilöille. *GitHub*:a olevia repositorio joka on kytketty paikalliseen Git työkansioon on ns. *remote*. *Remote* taas puolestaan tunnetaan Git komennoissa nimellä *Origin*, tosin nimi on vaihdettavissa.  
 
 ---------------
-
-### Git:n peruskäyttö
-
-Git:ä voidaan käyttää jokoa Git komentoriviltä tai suoraan kehitystyökalun (esim. Visual Studio Code) kautta. On hyvä tietää Git komentorivin peruskomennot vaikka jatkossa Git:ä käyttäisikin kehitystyökalun avulla. Näin Git toiminnallisuudet sisäistää paremmin.
-
-Git järjestelmänä koostuu kolmesta osasta  
-1. Työkansio tietoineen (*working directory*)
-2. Git indeksi (*staging area*)
-3. Paikallinen versionhallinta repositorio .git hakemistossa (*local .git*)
-
-![Git prosessi](https://uidaholib.github.io/get-git/images/workflow.png)
-
-**Git työskentely:**
 
 Git tietojen määrittäminen:
 - Git versiohallinnan ottaminen käyttöön työkansiossa: ```git init```   
@@ -63,9 +44,6 @@ Työhakemiston synkronoiminen *GitHub:n*:
 - *GitHub* repositorion ja paikallisen työkansion tilenteen erojen päivittäminen: ```git fetch```  
 - Tietojen lataaminen *GitHub* repositoriosta paikalliseen työkansioon: ``` git pull ```  
 
-**GitHub* fork:**
-Ns. *Fork* on *GitHub* repositorio joka syntynyt *fork* toiminnon takia kopiona jonkun toisen *GitHub* repositorista. *Fork* sisältää kaikki samat tiedot kuin alkuperäinen repositorio. *Fork*:n omistaa kopion luonut henkilö joten tietojen lisääminen *Fork* repositorioon on mahdollista.
-
 Git *fork*:n liittyviä Git komentoja
 - *Upstream remoten* lisääminen paikalliseen Git työhakemistoon:   
 ```git remote add upstream git://github.com/GitHubTunnus>/GitHubRepositorio.git>```     
@@ -73,7 +51,7 @@ Git *fork*:n liittyviä Git komentoja
 
 **Haarat eli *branch*:t**:
 
-Git haara (*branch*) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin. Haaraa voitaisiin käyttää sovelluksen erilaisten toiminnallisuuksien kehittämiseen ilman että kehitystyöllä on vaikutusta sovelluksen muun lähdekoodin toimintaan. Haarassa olevat tiedot yhdistetään lopulta sovelluksen päähaaran (*master* tai *main*) sisältämään lähdekoodiin. 
+Git haara (*branch*) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin. Haaraa voitaisiin käyttää sovelluksen erilaisten toiminnallisuuksien kehittämiseen ilman että kehitystyöllä on vaikutusta sovelluksen muun lähdekoodin toimintaan.
 
 Git haaroihin liittyvä työskentely:
 - Git haarojen listaaminen: ```git branch```    
