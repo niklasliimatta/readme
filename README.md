@@ -6,9 +6,6 @@
 ### Mitä versiohallinnalla tarkoitetaan?
 Versionhallinnalla tarkoittaa menetelmää, joka säilöö tietoa ja siihen tehtyjä muutoksia.
 
-  
-
-
 
 Git on hajautetun versiohallinnan menetelmä jossa ideana on tarjota säilytyspaikka käytettävälle tiedolle ja pitää kirjaa tietoon tehdyistä muutoksista. Alunperin Git:n on kehittänyt suomalainen [Linus Thorvalds](https://fi.wikipedia.org/wiki/Linus_Torvalds).
 
@@ -51,7 +48,7 @@ Git *fork*:n liittyviä Git komentoja
 
 **Haarat eli *branch*:t**:
 
-Git haara (*branch*) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin. Haaraa voitaisiin käyttää sovelluksen erilaisten toiminnallisuuksien kehittämiseen ilman että kehitystyöllä on vaikutusta sovelluksen muun lähdekoodin toimintaan.
+Git haara (*branch*) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin.
 
 Git haaroihin liittyvä työskentely:
 - Git haarojen listaaminen: ```git branch```    
@@ -61,11 +58,3 @@ Git haaroihin liittyvä työskentely:
 
 --------------------
 
-### Git ja GitHub toiminta yleisellä tasolla
-
-![Gitin peruskäyttö](https://gitlab.jyu.fi/tie/ohj2/esimerkit/k2020/raw/master/luennot/luento02/git.png)
-
-------------------
-
-Linus Thorvalds
->"*Kun Microsoft alkaa tehdä ohjelmia Linuxille, se tarkoittaa että minä olen voittanut.*"
