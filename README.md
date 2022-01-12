@@ -14,7 +14,7 @@ Git on hajautetun versiohallinnan menetelmä jossa ideana on tarjota säilytyspa
 
 *GitHub* mahdollistaa myös saman tiedon parissa työskentelyn eri tietokoneilta.
 
-
+![Githubin vaiheet](/download2.png)
 ---------------
 
 Git tietojen määrittäminen:
